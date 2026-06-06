@@ -11,7 +11,7 @@ public class Processo {
         this.id = id;
         this.tempoExecucaoTotal = tempoExecucaoTotal;
         this.tempoExecutado = 0; // todo processo comça sem tempo gasto
-        this.estadoAtual = estadoAtual.NOVO; // todo processo inicia no estado padrao de NOVO
+        this.estadoAtual = EstadoProcesso.NOVO; // todo processo inicia no estado padrao de NOVO
     }
 
     // metodo para simular a execução do processo por um determinado tempo - quantum
