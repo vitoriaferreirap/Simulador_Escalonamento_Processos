@@ -1,5 +1,6 @@
 package model;
 
+// apenas estrutura que guarda dados
 public class Processo {
     // Representa cada processo, que será gerênciado pelo escalonador
     private int id;
