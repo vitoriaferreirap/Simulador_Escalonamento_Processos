@@ -19,7 +19,7 @@ public class Main {
         fila.adicionarProcesso(new ThreadSimulada(p3));
 
         // Instancia o escalonador com a fila e um quantum
-        Escalonador escalonador = new Escalonador(fila, 3000);
+        Escalonador escalonador = new Escalonador(fila, 2000, "ROUND_ROBIN", 2);
 
         System.out.println("Iniciando simulação de escalonamento...");
 

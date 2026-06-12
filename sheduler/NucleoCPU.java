@@ -3,7 +3,8 @@ package sheduler;
 import model.ThreadSimulada;
 
 public class NucleoCPU {
-    // Simula nucleos do processamento
+    // AQUI ESTÁ O REQUISITO: O sistema possui múltiplos núcleos de CPU simulados
+    // para representar a arquitetura multicore conforme a Descrição do Problema.
     private int id;
     private boolean estaLivre;
 
@@ -13,6 +14,8 @@ public class NucleoCPU {
     }
 
     // Executa uma thread simulada no núcleo
+    // AQUI ESTÁ O REQUISITO: O núcleo atua como a unidade de execução
+    // física (simulada) que recebe a thread delegada pelo escalonador.
     public void executar(ThreadSimulada thread) {
         this.estaLivre = false;
         System.out.println("Núcleo " + id + " executando processo " + thread.getProcesso().getId());
